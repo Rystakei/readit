@@ -4,3 +4,7 @@
   - @links.each do |link|
     %li
     = link_to link.title, link.url
+    = link_to "comments", link 
+    <!-- this the same as link_path(link); rails assumes you mean the show view -->
+
+= will_paginate @links
